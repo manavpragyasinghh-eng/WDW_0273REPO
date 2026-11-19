@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8 - Links and Images</title>
+    <style>
+        /* Leave space so the jump-to-bottom link is easy to test */
+        .page-content { min-height: 450px; }
+        img { width: 100px; height: 70px; object-fit: cover; }
+    </style>
+</head>
+<body id="top">
+    <p>Links demo</p>
+
+    <!-- External link opens another website in a new tab -->
+    <p><a href="https://www.wikipedia.org/" target="_blank" rel="noopener">External link</a></p>
+
+    <!-- Internal link jumps to the element with id="bottom" -->
+    <p><a href="#bottom">Jump to bottom</a></p>
+
+    <!-- mailto opens the user's default email application -->
+    <p><a href="mailto:info@example.com">Email us</a></p>
+
+    <p>Logo</p>
+    <!-- Replace logo.png with the name/path of your own image file -->
+    <img src="logo.png" alt="College logo">
+
+    <div class="page-content"></div>
+
+    <p id="bottom">Bottom. <a href="#top">Back to top</a></p>
+</body>
+</html>

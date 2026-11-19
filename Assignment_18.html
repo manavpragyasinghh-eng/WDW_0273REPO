@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC College Admission 2026</title>
+    <style>
+        /* Basic page styling for a clean admission portal */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #222;
+        }
+
+        header, footer {
+            background-color: #202878;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        main {
+            max-width: 520px;
+            margin: 20px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        caption { padding: 6px; }
+        th, td {
+            border: 1px solid #aaa;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th { background-color: #e8e9f2; }
+
+        fieldset { padding: 12px; }
+        label { display: block; margin-top: 12px; }
+        input, select, textarea {
+            box-sizing: border-box;
+            max-width: 100%;
+            width: 260px;
+            padding: 5px;
+        }
+
+        textarea { height: 80px; }
+        button { margin-top: 14px; padding: 7px 12px; }
+
+        @media (max-width: 480px) {
+            body { margin: 10px; }
+            header h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Semantic header identifies the college admission page -->
+    <header>
+        <h1>ABC College Admission 2026</h1>
+    </header>
+
+    <main>
+        <section aria-labelledby="courses-heading">
+            <h2 id="courses-heading">Courses and Fees</h2>
+
+            <!-- Accessible table listing courses, seats and fees -->
+            <table>
+                <caption>Available Courses</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Course</th>
+                        <th scope="col">Seats</th>
+                        <th scope="col">Fees</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Tech CSE</td>
+                        <td>120</td>
+                        <td>₹90,000</td>
+                    </tr>
+                    <tr>
+                        <td>BCA</td>
+                        <td>60</td>
+                        <td>₹45,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Admission form uses labels and built-in browser validation -->
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Application Form</legend>
+
+                <label for="student-name">Name:</label>
+                <input type="text" id="student-name" name="student_name" required>
+
+                <label for="student-email">Email:</label>
+                <input type="email" id="student-email" name="email" required>
+
+                <label for="student-course">Course:</label>
+                <select id="student-course" name="course" required>
+                    <option value="B.Tech CSE">B.Tech CSE</option>
+                    <option value="BCA">BCA</option>
+                </select>
+
+                <label for="statement">Statement:</label>
+                <textarea id="statement" name="statement"
+                    aria-label="Application statement"></textarea>
+
+                <button type="submit">Apply</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <!-- Semantic footer -->
+    <footer>
+        <p>&copy; 2026 ABC College</p>
+    </footer>
+</body>
+</html>

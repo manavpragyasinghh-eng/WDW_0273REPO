@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 11 - Accessible Page</title>
+</head>
+<body>
+    <!-- Skip link lets keyboard users jump directly to main content -->
+    <a href="#main-content">Skip to main content</a><br>
+    <a href="#help">Home Help</a>
+
+    <main id="main-content">
+        <h1>Accessible Page</h1>
+
+        <!-- Meaningful alt text describes the image to screen readers -->
+        <img src="help.png" alt="Help icon" width="150" height="30">
+
+        <!-- aria-label provides an accessible name for the search field -->
+        <form role="search" action="#" method="get">
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="q" aria-label="Search this website">
+        </form>
+
+        <p id="help">Use the search box to find information.</p>
+    </main>
+</body>
+</html>
